@@ -103,11 +103,20 @@ new branch for your work on the next question!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+    var adding = sum(a,b);
+    var adding2 = sum(adding[0],c);
+    var product = multiply(a,b);
+    var product2 = multiply(product[0],c);
 
+    // var str = adding[0]" and " adding[1] " sum to " adding2[1];
+    // var str2 = multiply(product[1],c);
+
+    return [adding2[0], product2[0], a + " and " + b + " and " + c + " sum to " + adding2[0] + ".", 
+    "The product of " + a + " and " + b + " and " + c + " is " + product2[0] + '.'];
 }
 
-// Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+// // Here is the test for sumAndMultiply(); uncomment it to run it
+testSumAndMultiply(4,7,5);
 
 
 /////////////////////////////////////
