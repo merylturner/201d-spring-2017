@@ -118,7 +118,6 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
 // // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
-
 /////////////////////////////////////
 /* Problem 4
 Write a function called sumArray() that takes in an array of 
@@ -146,11 +145,14 @@ new branch for your work on the next question!
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
+    var sumMore = sum(testArray[0], testArray[1]);
+    var sumMore2 = sum(sumMore[0], testArray[2]);
 
+    return [sumMore2[0], testArray[0] + "," + testArray[1] + "," + testArray[2] + " was passed in as an array of numbers, and " + sumMore2[0] + " is their sum."]
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 
 
 /////////////////////////////////////
